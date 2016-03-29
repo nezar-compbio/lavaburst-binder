@@ -1,16 +1,19 @@
 name: lavaburst
 dependencies:
 - python=3.5
+- six
+- nose
 - numpy
 - scipy
 - cython
+- h5py
+- pandas
 - matplotlib
 - seaborn
-- pandas
-- six
-- nose>=1.3
 - pip>=7.1
 - pip:
+  - pysam
+  - biopython
+  - https://bitbucket.org/mirnylab/mirnylib/get/tip.tar.gz
   - git+git://github.com/nezar-compbio/lavaburst.git
   - git+git://github.com/mirnylab/cooler.git
-  - https://bitbucket.org/mirnylab/mirnylib/get/tip.tar.gz
